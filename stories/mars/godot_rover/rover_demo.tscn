@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="PackedScene" path="res://stories/mars/godot_rover/opportunity_rover.tscn" id="1_rover"]
+[ext_resource type="Script" path="res://stories/mars/godot_rover/rover_demo.gd" id="2_demo"]
+
+[sub_resource type="Environment" id="Environment_sky"]
+background_mode = 1
+background_color = Color(1, 0.84, 0.92, 1)
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 0.4
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ground"]
+size = Vector2(40, 40)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ground"]
+albedo_color = Color(0.62, 0.95, 0.84, 1)
+roughness = 1.0
+
+[node name="RoverDemo" type="Node3D"]
+script = ExtResource("2_demo")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_sky")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+light_energy = 0.3
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+fov = 30.0
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_ground")
+surface_material_override/0 = SubResource("StandardMaterial3D_ground")
+
+[node name="OpportunityRover" parent="." instance=ExtResource("1_rover")]
+demo_motion = true

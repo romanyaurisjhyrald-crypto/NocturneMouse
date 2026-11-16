@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://stories/mars/godot_rover/opportunity_rover.glb" id="1_glb"]
+[ext_resource type="Script" path="res://stories/mars/godot_rover/opportunity_rover.gd" id="2_script"]
+
+[node name="OpportunityRover" instance=ExtResource("1_glb")]
+script = ExtResource("2_script")

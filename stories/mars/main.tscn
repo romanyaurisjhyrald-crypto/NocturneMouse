@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://stories/mars/mars.gd" id="1"]
+
+[node name="Mars" type="Node3D"]
+script = ExtResource("1")
+use_blender_layout = false
+endless_world = true
+story_mode = true

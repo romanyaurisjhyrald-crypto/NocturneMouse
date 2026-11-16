@@ -1,0 +1,18 @@
+NocturneMouse / Nocturne
+Copyright 2026 Nocturne contributors
+
+The root MIT LICENSE was selected by the owner of NocturneMouse and is retained
+verbatim, including its copyright notice. It applies to new original contributions
+unless a file or component specifies another license.
+
+The imported Nocturne game snapshot, including the Mars Jelly integration, retains
+its Apache-2.0 license: see licenses/Nocturne-Apache-2.0.txt. Publication in this
+repository does not remove the Apache terms or relicense upstream components.
+The snapshot was copied from the creator's integrated Nocturne working project
+on November 15, 2026; its earlier public source is:
+https://github.com/romanyaurisjhyrald-crypto/nocturne
+
+Existing MIT notices in stories/html remain in effect. Embedded third-party
+notices, including font licenses, remain under licenses/ and in their files.
+NASA names, insignia, photographs and external data retain their own terms.
+This independent educational project is not endorsed by NASA.
